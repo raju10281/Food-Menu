@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="style.css">
+		<title>Food Menu - Assignment</title>
+	</head>
+
+	<body>
+		<div class="navbar">
+			<div class="title">
+				<span>Food Menu</span>				
+			</div>
+		</div>
+
+		<div class="tab">
+			<div class="tab-header">
+				<span class="header-dot"></span>
+				<span><b>Foodie</b></span>
+			</div><br>
+			<button class="tablinks" onclick="menuList(event, 'Breakfast')">
+				<span><img src="image/breakfast.png" width="64" height="64"></span><br>
+				Breakfast
+			</button>
+			<button class="tablinks" onclick="menuList(event, 'Lunch')">
+				<span><img src="image/lunch.png" width="64" height="64"></span><br>
+				Lunch
+			</button>
+			<button class="tablinks" onclick="menuList(event, 'Dinner')">
+				<span><img src="image/dinner.png" width="64" height="64"></span><br>
+				Dinner
+			</button>
+		</div>
+
+		<div id="Breakfast" class="tabcontent" align="center">
+			<div class="tabcontent-inner">
+				<div class="row">
+					<div class="column col-left">
+						<span><img src="image/Banananutbread.jpg" width="100" height="100"></span>
+					</div>
+					<div class="column col-mid">
+						<h2>Banana Nut Bread</h2>
+						<p class="text-muted">Banana bread is a type of bread made from mashed bananas. It is often a moist, sweet, cake-like quick bread.</p>
+						<p class="text-muted cook-time">
+							<span class="dot"></span>  15 mins &nbsp;
+							<span class="dot"></span>  2 serves
+						</p>
+					</div>
+					<div class="column col-right">
+						<h5 class="text-muted">Price</h5>
+						<h4>Rs. 170.00</h4>
+					</div>
+				</div>
+				<div class="row">
+					<div class="column col-left">
+						<span><img src="image/Aloo_Paratha.jpg" width="100" height="100"></span>
+					</div>
+					<div class="column col-mid">
+						<h2>Aloo paratha</h2>
+						<p class="text-muted">It is a breakfast dish originated from the Punjab region. The recipe is one of the most popular breakfast dishes.</p>
+						<p class="text-muted cook-time">
+							<span class="dot"></span>  20 mins &nbsp;
+							<span class="dot"></span>  2 serves
+						</p>
+					</div>
+					<div class="column col-right">
+						<h5 class="text-muted">Price</h5>
+						<h4>Rs. 150.00</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="Lunch" class="tabcontent" align="center">
+			<div class="tabcontent-inner">
+				<div class="row">
+					<div class="column col-left">
+						<span><img src="image/Swordfish.jpg" width="100" height="100"></span>
+					</div>
+					<div class="column col-mid">
+						<h2>Swordfish Lunch</h2>
+						<p class="text-muted">Swordfish, also known as broadbills in some countries, are large, highly migratory, predatory fish characterized by a long, flat, pointed bill.</p>
+						<p class="text-muted cook-time">
+							<span class="dot"></span>  15 mins &nbsp;
+							<span class="dot"></span>  2 serves
+						</p>
+					</div>
+					<div class="column col-right">
+						<h5 class="text-muted">Price</h5>
+						<h4>Rs. 620.00</h4>
+					</div>
+				</div>
+				<div class="row">
+					<div class="column col-left">
+						<span><img src="image/Brazilian_lunch.jpg" width="100" height="100"></span>
+					</div>
+					<div class="column col-mid">
+						<h2>Brazilian Lunch</h2>
+						<p class="text-muted">Beans, rice, meat or fish and a selection of salad and vegetables. Lunch is followed by a simple dessert such as pudim.</p>
+						<p class="text-muted cook-time">
+							<span class="dot"></span>  15 mins &nbsp;
+							<span class="dot"></span>  2 serves
+						</p>
+					</div>
+					<div class="column col-right">
+						<h5 class="text-muted">Price</h5>
+						<h4>Rs. 950.00</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="Dinner" class="tabcontent" align="center">
+			<div class="tabcontent-inner">
+				
+				<div class="row">
+					<div class="column col-left">
+						<span><img src="image/Quesadilla-Dinner-Ideas.png" width="100" height="100"></span>
+					</div>
+					<div class="column col-mid">
+						<h2>Quesadillas</h2>
+						<p class="text-muted">Quesadillas (plain cheese, steak, chicken, or pork)</p>
+						<p class="text-muted cook-time">
+							<span class="dot"></span>  25 mins &nbsp;
+							<span class="dot"></span>  2 serves
+						</p>
+					</div>
+					<div class="column col-right">
+						<h5 class="text-muted">Price</h5>
+						<h4>Rs. 1250.00</h4>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="column col-left">
+						<span><img src="image/Pizza-Dinner-Ideas.png" width="100" height="100"></span>
+					</div>
+					<div class="column col-mid">
+						<h2>Chicken Parmesan</h2>
+						<p class="text-muted">Breaded chicken (can bread with Italian bread crumbs, graham crackers, saltines, potato chips).</p>
+						<p class="text-muted cook-time">
+							<span class="dot"></span>  25 mins &nbsp;
+							<span class="dot"></span>  2 serves
+						</p>
+					</div>
+					<div class="column col-right">
+						<h5 class="text-muted">Price</h5>
+						<h4>Rs. 850.00</h4>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<script>
+		function menuList(event, foodTime) {
+			var i, tabcontent, tablinks;
+			tabcontent = document.getElementsByClassName("tabcontent");
+
+			for (i = 0; i < tabcontent.length; i++) {
+				tabcontent[i].style.display = "none";
+			}
+			tablinks = document.getElementsByClassName("tablinks");
+
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			}
+
+			document.getElementById(foodTime).style.display = "block";
+			event.currentTarget.className += " active";
+		}
+		</script>
+	</body>
+</html>

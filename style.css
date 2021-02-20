@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*navbar*/
+.navbar {
+  overflow: hidden;
+  background-color: #2c2c2c;
+  height:39px;
+  text-align:center;
+  color: white;
+}
+
+.title{
+  margin-top: 10px;
+}
+
+/*Tab - Break,Lunch,Dinner*/
+.tab img {
+  border-radius: 50%;
+}
+
+.tab-header {
+  margin-top:15px;
+  font-size: 25px;
+}
+
+.tab {
+  background-color: #FFFFFF;
+  height: 275px;
+  text-align: center;
+}
+
+.tab button {
+  margin-top:30px;
+  margin-left:30px;
+  background-color: inherit;
+  float: center;
+  border: 1px solid #ccc;;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  width: 164px;
+  height: 164px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+/*Tab Content - Food Menu List*/
+.tabcontent {
+  display: none;
+  background-color: #f1f1f1;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+  height: 500px;
+}
+
+.tabcontent-inner {
+  border: 1px solid #ccc;
+  background-color: #FFFFFF;
+  width:1024px;
+  height:  450px;
+  box-shadow: 0 6px 12px 0 rgba(0,0,0,0.2);
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  text-align: left;
+  padding: 10px;
+}
+
+.col-left {
+  width:15%;
+} 
+
+.col-right {
+  float:right;
+  width:15%;
+}
+
+.col-mid {
+  width:55%;
+}
+
+.col-left img {
+  padding: 30px 20px;
+}
+
+.text-muted {
+  opacity:0.5;
+}
+
+.cook-time {
+  font-size: 12px;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: #C4C4C4;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.header-dot {
+  height: 20px;
+  width: 20px;
+  background-color: #C4C4C4;
+  border-radius: 50%;
+  display: inline-block;
+}
